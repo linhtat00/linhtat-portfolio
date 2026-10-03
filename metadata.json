@@ -1,0 +1,6 @@
+{
+  "name": "Linh Tat | Blue Team & DFIR Portfolio",
+  "description": "Information Security undergraduate portfolio, operational threat dossiers, and CTF writeups repository specializing in DFIR, Splunk SIEM, and memory forensics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
