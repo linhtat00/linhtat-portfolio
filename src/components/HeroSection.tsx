@@ -4,13 +4,11 @@ import { ArrowRight, Download, Terminal as TerminalIcon, ShieldCheck, CornerDown
 interface HeroSectionProps {
   onExploreWriteups: () => void;
   onDownloadResume: () => void;
-  onOpenUploadCMS?: () => void;
 }
 
 export const HeroSection: React.FC<HeroSectionProps> = ({
   onExploreWriteups,
-  onDownloadResume,
-  onOpenUploadCMS
+  onDownloadResume
 }) => {
   const [terminalInput, setTerminalInput] = useState('');
   const [commandHistory, setCommandHistory] = useState<Array<{ cmd: string; output: React.ReactNode }>>([]);
@@ -112,7 +110,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-val"></span>
               </span>
               <span className="hero-badge-text">
-                Seeking Summer / Fall 2027 Blue Team / SOC Internship
+                Seeking Summer 2027 Blue Team / SOC Internship
               </span>
             </div>
 

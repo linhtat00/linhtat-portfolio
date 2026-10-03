@@ -2,6 +2,8 @@
 
 An interactive, high-contrast, offensive/defensive cybersecurity portfolio and technical investigation dossier hub. Designed for SOC Analysts, Incident Responders, and Threat Hunters to showcase real-world forensics, CTF challenges, homelab SIEM architecture, and verifiable credentials.
 
+This is the project I created during the Google Vibe-coding workshop at my university.
+
 ---
 
 ## 🎯 Features
