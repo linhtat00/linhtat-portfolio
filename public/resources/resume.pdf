@@ -1,0 +1,123 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1919 >>
+stream
+BT
+/F1 16 Tf
+50 750 Td
+(LINH TAT - INFORMATION SECURITY RESUME) Tj
+ET
+BT
+/F1 10 Tf
+50 735 Td
+(DFIR & Blue Team Operations | linhtatblue@gmail.com) Tj
+ET
+BT
+/F2 9 Tf
+50 710 Td
+(--------------------------------------------------------------------------------) Tj
+0 -13 Td
+ET
+BT
+/F1 10 Tf
+50 697 Td
+(EDUCATION) Tj
+ET
+BT
+/F2 8.5 Tf
+50 683 Td
+(B.S. in Information Security, Minor in Network Engineering \(Expected May 2026\)) Tj
+0 -13 Td
+(GPA: 3.89 / 4.0 | Dean's Honor Roll \(All Semesters\)) Tj
+0 -13 Td
+(Relevant Coursework: DFIR, Network Security, Operating Systems, Cryptography) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+ET
+BT
+/F1 10 Tf
+50 631 Td
+(CERTIFICATIONS & CREDENTIALS) Tj
+ET
+BT
+/F2 8.5 Tf
+50 617 Td
+(- TryHackMe SOC Level 1 & Level 2 \(Certified Blue Team Operations\)) Tj
+0 -13 Td
+(- Google Cybersecurity Professional Certificate \(Foundations & Operations\)) Tj
+0 -13 Td
+(- TOEIC Listening & Reading: 930 / 990 \(Advanced Technical English Fluency\)) Tj
+0 -13 Td
+(- CompTIA Security+ \(Sec+\) & Blue Team Level 1 \(BTL1\)) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+ET
+BT
+/F1 10 Tf
+50 552 Td
+(TECHNICAL PROFICIENCIES) Tj
+ET
+BT
+/F2 8.5 Tf
+50 538 Td
+(- SIEM & EDR: Splunk Enterprise / ES \(SPL, Data Models\), Elastic SIEM, Sysmon, Osquery) Tj
+0 -13 Td
+(- Forensics & PCAP: Volatility 3, Autopsy, KAPE, FTK Imager, Wireshark, Zeek, Brim, Ghidra) Tj
+0 -13 Td
+(- Detection & Rules: Sigma Rules, Suricata NIDS, Snort, YARA, MITRE ATT&CK Mapping) Tj
+0 -13 Td
+(- Scripting & Automation: Python 3, PowerShell, Bash, KQL, Regex) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+ET
+BT
+/F1 10 Tf
+50 473 Td
+(DEFENSIVE INVESTIGATIONS & DOSSIERS) Tj
+ET
+BT
+/F2 8.5 Tf
+50 459 Td
+(1. QakBot In-Flight Memory Carving: Process hollowing triage with Volatility 3.) Tj
+0 -13 Td
+(2. Active Directory Defense: High-fidelity Splunk correlation for Kerberoasting RC4 SPNs.) Tj
+0 -13 Td
+(3. Dual-Node Proxmox Homelab: Suricata IDS + Zeek SPAN mirror tap into Splunk ES.) Tj
+0 -13 Td
+ET
+
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000257 00000 n 
+0000002228 00000 n 
+0000002303 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+2373
+%%EOF

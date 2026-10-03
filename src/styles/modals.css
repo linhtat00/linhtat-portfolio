@@ -1,0 +1,83 @@
+/* Modal Component Styles */
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.82);
+  backdrop-filter: blur(4px);
+}
+
+.modal-window {
+  position: relative;
+  width: 100%;
+  max-width: 48rem;
+  background-color: var(--color-surface-card);
+  border: 1px solid var(--color-surface-border);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family-sans);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 30;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-surface-container-high);
+  color: var(--color-text-muted);
+  border: 1px solid #3f3f46;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.modal-close-btn:hover {
+  background-color: #2c2c34;
+  color: #ffffff;
+}
+
+.modal-header {
+  padding: 1rem 1.25rem;
+  padding-right: 4rem;
+  background-color: var(--color-surface-container);
+  border-bottom: 1px solid var(--color-surface-border);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.modal-title {
+  font-family: var(--font-family-mono);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.modal-body {
+  padding: 1.5rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  background-color: var(--color-surface-container-lowest);
+}
+
+@media (min-width: 640px) {
+  .modal-body {
+    padding: 2rem;
+  }
+}
