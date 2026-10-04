@@ -17,9 +17,21 @@ import { Footer } from './components/Footer';
 export default function App() {
   const [writeups] = useState<Writeup[]>(INITIAL_WRITEUPS);
 
+ // 1. Define the GitHub Pages repository base path
+  const BASE_PATH = '/portfolio';
+
+  // 2. Helper function to normalize the URL path
+  const getNormalizedPath = () => {
+    let path = window.location.pathname.toLowerCase();
+    if (path.startsWith(BASE_PATH)) {
+      path = path.slice(BASE_PATH.length) || '/';
+    }
+    return path;
+  };
+
   const [activeTab, setActiveTab] = useState<ActiveTab>(() => {
     if (typeof window !== 'undefined') {
-      const path = window.location.pathname.toLowerCase();
+      const path = getNormalizedPath();
       if (path === '/about' || path.startsWith('/about')) return 'about';
       if (path === '/labs' || path.startsWith('/labs') || path === '/homelab' || path.startsWith('/homelab')) return 'labs';
       if (path === '/writeups' || path.startsWith('/writeup')) return 'writeups';
@@ -30,13 +42,11 @@ export default function App() {
   const [selectedWriteup, setSelectedWriteup] = useState<Writeup | null>(null);
   const [selectedLabSlug, setSelectedLabSlug] = useState<string | null>(null);
 
-  // Modals
   const [isResumeOpen, setIsResumeOpen] = useState(false);
 
-  // Listen to browser navigation (back/forward)
   useEffect(() => {
     const handleLocationChange = () => {
-      const path = window.location.pathname.toLowerCase();
+      const path = getNormalizedPath();
       
       if (path === '/about') {
         setActiveTab('about');
@@ -55,7 +65,6 @@ export default function App() {
     return () => window.removeEventListener('popstate', handleLocationChange);
   }, []);
 
-  // Showcase Navigation
   const handleSelectWriteup = (w: Writeup) => {
     setSelectedWriteup(w);
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -70,16 +79,17 @@ export default function App() {
     setSelectedWriteup(null);
     setActiveTab(tab);
     
-    // Update browser URL to reflect individual pages
     try {
-      const newPath = tab === 'home' ? '/' : `/${tab}`;
+      // 3. Prepend BASE_PATH when pushing to browser history
+      const newPath = tab === 'home' ? `${BASE_PATH}/` : `${BASE_PATH}/${tab}`;
       window.history.pushState(null, '', newPath);
     } catch (e) {
-      // ignore if iframe security blocks pushState
+      // ignore
     }
 
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+ 
 
   // PUBLIC SHOWCASE PORTFOLIO (Pure Read-Only, 100% Static & Secure)
   return (
