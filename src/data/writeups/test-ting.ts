@@ -1,7 +1,7 @@
 import { Writeup } from '../../types';
 
 export const testTingWriteup: Writeup = {
-  "id": "writeup-1791091242135",
+  "id": "writeup-1791091490154",
   "slug": "test-ting",
   "code": "#IR-20261004-1218",
   "title": "test ting",
