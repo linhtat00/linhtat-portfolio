@@ -1,7 +1,7 @@
 import { Writeup } from '../../types';
 
 export const lummaStealerMemoryEvasionTlsC2DissectionWriteup: Writeup = {
-  "id": "writeup-1791092155542",
+  "id": "writeup-1791092159718",
   "slug": "lumma-stealer-memory-evasion-tls-c2-dissection",
   "code": "#IR-20261004-1235",
   "title": "Lumma Stealer Memory Evasion & TLS C2 Dissection",
