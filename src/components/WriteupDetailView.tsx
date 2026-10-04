@@ -160,15 +160,6 @@ ${writeup.content}
           {/* Action buttons */}
           <div className="flex items-center gap-2">
             <button
-              onClick={handleExportMarkdown}
-              className="writeup-action-btn"
-              title="Download raw markdown file"
-            >
-              <Download className="w-3.5 h-3.5" />
-              <span>Export .md</span>
-            </button>
-
-            <button
               onClick={handleShare}
               className="writeup-action-btn"
             >
